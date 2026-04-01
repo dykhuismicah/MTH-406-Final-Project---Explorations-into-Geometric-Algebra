@@ -94,8 +94,26 @@ var ptx_lunr_docs = [
   "id": "ga-paper-8",
   "level": "1",
   "url": "ga-paper-8.html",
-  "type": "References",
+  "type": "Section",
   "number": "6",
+  "title": "Manim Presentation",
+  "body": " Manim Presentation   Interactive Slideshow of Geometric Algebra Concepts    "
+},
+{
+  "id": "manim-demo",
+  "level": "2",
+  "url": "ga-paper-8.html#manim-demo",
+  "type": "Figure",
+  "number": "6.1",
+  "title": "",
+  "body": " Interactive Slideshow of Geometric Algebra Concepts   "
+},
+{
+  "id": "ga-paper-9",
+  "level": "1",
+  "url": "ga-paper-9.html",
+  "type": "References",
+  "number": "7",
   "title": "Bibliography",
   "body": " Bibliography  Arkadiusz Jadczyk. Notes on Clifford Algebras . 2019. Available at .  Pierre Renaud. CLIFFORD ALGEBRAS LECTURE NOTES ON APPLICATIONS IN PHYSICS . 2020. Available at .  David Hestenes and Garret Sobczyk. Clifford Algebra to Geometric Calculus . D. Reidel Publishing Company, Dordrecht, 1984.  sudgylacmoe. A Swift Introduction to Geometric Algebra . YouTube video. Available at .  Tevian Dray. The Geometry of the Exceptional Lie Groups . Oregon State University, 2023. Available at .  "
 }
