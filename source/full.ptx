@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <article xml:id="ga-paper">
-  <title>Geometric Algebra</title>
-<section>
-  <bibinfo>
-    <author>
-      <personname>Micah Dykhuis</personname>
-    </author>
-  </bibinfo>
-  <title>Introduction</title>
+
+  <title>An Exploration into Geometric Algebra</title>
+
+  <frontmatter>
+    <bibinfo>
+      <author>
+        <personname>Micah Dykhuis</personname>
+      </author>
+    </bibinfo>
+    <titlepage>
+    </titlepage>
+  </frontmatter>
+
+  <section>
+    <title>Introduction</title>
 
   <p>
     Geometric Algebra is the study of the Geometric and Physical applications of Clifford Algebras. In fact,
@@ -43,12 +49,11 @@
     </p>
 
     <subsubsection>
-      <title>Vector Space</title>
+      <title>Built from any arbitrary Vector Space</title>
       <p>
-        An Algebra forming a vector space is one of the most useful properties an Algebra can have.
-        When the dimension of this vector space is finite, it allows us to form a finite basis for any element in the algebra.
-        Furthermore, this allows us to define orthogonality in this algebra. In fact, the concept of orthogonality
-        is crucial to the construction of these Geometric Algebras.
+        By definition, every algebra is inherently a vector space with a multiplication operator. Therefore, it would be useful to be able to construct our algebra 
+        starting from any arbitrary vector space. When this underlying space is finite-dimensional, it allows for a finite basis from which we can build all elements of 
+        the algebra. This foundation allows us to define orthogonality by simply borrowing it from the underlying vector space. Orthogonality is crucial to constructing a Geometric Algebra.
       </p>
     </subsubsection>
 
@@ -56,7 +61,8 @@
       <title>Algebra Between Elements of Different Dimensions</title>
       <p>
         Can you multiply a matrix and a vector? Sometimes, if they are of the right dimension. Can you subtract a vector from a matrix?
-        Under most vector spaces, that is nonsense. In Geometric Algebra, you can take two objects of different dimensions (in this case, grade, which we will discuss later on) and multiply them together to get something meaningful.
+        Under most vector spaces, that is nonsense. In Geometric Algebra, you can take two objects of different dimensions 
+        (in this case, grade, which we will discuss later on) and multiply them together to get something meaningful.
       </p>
     </subsubsection>
 
@@ -203,15 +209,19 @@
     <title>The Basis and Dimension of a Geometric Algebra</title>
 
     <p>
-      Now that we have established the geometric product and its components, we can look at the algebra as a whole. We now come to a new question: if we start with <m>n</m> orthogonal basis vectors in our underlying vector space, how many independent basis elements are in the resulting Geometric Algebra?
+      Now that we have established the geometric product and its components, we can look at the algebra as a whole. We now come to a new question: 
+      if we start with <m>n</m> orthogonal basis vectors in our underlying vector space, how many independent basis elements are in the resulting Geometric Algebra?
     </p>
 
     <p>
-      Because we can form new elements by taking the outer product of our basis vectors (forming bivectors, trivectors, etc.), the total dimension of the algebra are determined as binomial coefficients. For an <m>n</m>-dimensional vector space, there is <m>\binom{n}{0}</m> scalar, <m>\binom{n}{1}</m> basis vectors, <m>\binom{n}{2}</m> basis bivectors, all the way up to <m>\binom{n}{n}</m> <m>n</m>-blades. Summing these binomial coefficients gives us a total dimension of <m>2^n</m>.
+      Because we can form new elements by taking the outer product of our basis vectors (forming bivectors, trivectors, etc.), 
+      the total dimension of the algebra are determined as binomial coefficients. For an <m>n</m>-dimensional vector space, there is <m>\binom{n}{0}</m> scalar,
+       <m>\binom{n}{1}</m> basis vectors, <m>\binom{n}{2}</m> basis bivectors, all the way up to <m>\binom{n}{n}</m> <m>n</m>-blades. Summing these binomial coefficients gives us a total dimension of <m>2^n</m>.
     </p>
 
     <p>
-      Let us apply this to the Geometric Algebra representing 3D Euclidean space, <m>Cl_{3,0,0}</m>. Since <m>n=3</m>, the Geometric Algebra is a vector space of dimension <m>2^3 = 8</m>. We can then list the basis blades of <m>\clthree</m> by their grade:
+      Let us apply this to the Geometric Algebra representing 3D Euclidean space, <m>Cl_{3,0,0}</m>. Since <m>n=3</m>, the Geometric Algebra is a vector space 
+      of dimension <m>2^3 = 8</m>. We can then list the basis blades of <m>\clthree</m> by their grade:
     </p>
 
     <ul>
@@ -257,11 +267,18 @@
     </p>
 
     <p>
-      The highest-grade blade in any Geometric Algebra is special and is called the <em>Pseudoscalar</em>, usually denoted by <m>I</m>. In <m>Cl_{3,0,0}</m>, the pseudoscalar is the oriented volume <m>I = ijk</m>. The pseudoscalar has many interesting properties. One of which is, that if you calculate the geometric product of <m>I</m> with itself, you obtain: <m>I^2 = -1</m>. In <m>\clthree</m>, this makes <m>I</m> act very similarly to the imaginary number! Another useful property of pseudoscalars is that, multiplying any multivector by <m>I</m> finds its orthogonal complement. In Geomatric Algebra, this concept is called <em>duality</em>.
+      The highest-grade blade in any Geometric Algebra is special and is called the <em>Pseudoscalar</em>, usually denoted by <m>I</m>. In <m>Cl_{3,0,0}</m>, the
+       pseudoscalar is the oriented volume <m>I = ijk</m>. The pseudoscalar has many interesting properties. One of which is, that if you calculate the geometric 
+       product of <m>I</m> with itself, you obtain: <m>I^2 = -1</m>. In <m>\clthree</m>, this makes <m>I</m> act very similarly to the imaginary number! Another useful 
+       property of pseudoscalars is that, multiplying any multivector by <m>I</m> finds its orthogonal complement. In Geomatric Algebra, this concept is called <em>duality</em>.
     </p>
 
     <p>
-      The concept of duality is extremely useful in many fields, one of which beings physics. In physics, angular momentum and magnetic fields are often called "axial vectors" or "pseudovectors" because they act like vectors but do not perfectly mirror across planes. In Geometric Algebra, these quantities are actually bivectors! By multiplying a bivector <m>B</m> by the additive inverse of the pseudoscalar, we find its dual <m>\mathbf{v} = -IB</m>. Additionally, the standard cross product is just the dual of the outer product: <m>\mathbf{u} \times \mathbf{v} = -I(\mathbf{u} \wedge \mathbf{v})</m>. Geometric algebra removes the need for the right-hand rule and axial-vectors. Instead, it replaces them with bi-vectors that can be easily generalized.
+      The concept of duality is extremely useful in many fields, one of which beings physics. In physics, angular momentum and magnetic fields are often called "axial vectors" 
+      or "pseudovectors" because they act like vectors but do not perfectly mirror across planes. In Geometric Algebra, these quantities are actually bivectors! By multiplying a bivector 
+      <m>B</m> by the additive inverse of the pseudoscalar, we find its dual <m>\mathbf{v} = -IB</m>. Additionally, the standard cross product is just the dual of the outer product: 
+      <m>\mathbf{u} \times \mathbf{v} = -I(\mathbf{u} \wedge \mathbf{v})</m>. Geometric algebra removes the need for the right-hand rule and axial-vectors. Instead, it replaces them with 
+      bi-vectors that can be easily generalized.
     </p>
   </subsection>
 </section>
@@ -270,22 +287,28 @@
   <title>Reflections</title>
 
   <p>
-    In traditional linear algebra, reflecting a vector across a plane usually requires the projection formula. In Geometric Algebra, however, the geometric product allows us to express reflections as a sandwhich product.
+    In traditional linear algebra, reflecting a vector across a plane usually requires the projection formula. In Geometric Algebra, however, the geometric product allows us to 
+    express reflections as a sandwhich product.
   </p>
 
   <p>
-    Let's assume that we have a vector <m>\mathbf{v}</m> that we would like to reflect across a plane (in dimensions <m>n\gt3</m>, we can use hyperplanes, which are higher dimensional planes). We can define this plane by its normal vector (it's dual, or orthogonal complement.): <m>\mathbf{n}</m>. To simplify the math, we can assume <m>\mathbf{n}</m> is a unit vector. This means that <m>\mathbf{n}\mathbf{n}=1</m>. In Geometric Algebra, the reflected vector <m>\mathbf{v}'</m> is given by the formula:
+    Let's assume that we have a vector <m>\mathbf{v}</m> that we would like to reflect across a plane (in dimensions <m>n\gt3</m>, we can use hyperplanes, which are higher 
+    dimensional planes). We can define this plane by its normal vector (it's dual, or orthogonal complement.): <m>\mathbf{n}</m>. To simplify the math, we can assume <m>\mathbf{n}</m> 
+    is a unit vector. This means that <m>\mathbf{n}\mathbf{n}=1</m>. In Geometric Algebra, the reflected vector <m>\mathbf{v}'</m> is given by the formula:
     <md>
       \mathbf{v}' = -\mathbf{n}\mathbf{v}\mathbf{n}.
     </md>
   </p>
 
   <p>
-    Let's break down why this formula works. We can decompose our vector <m>\mathbf{v}</m> into two parts. These parts are a component parallel to the normal vector (<m>\mathbf{v}_{\parallel}</m>) and a component orthogonal to the normal vector (<m>\mathbf{v}_{\perp}</m>). Thus, <m>\mathbf{v} = \mathbf{v}_{\parallel} + \mathbf{v}_{\perp}</m>.
+    Let's break down why this formula works. We can decompose our vector <m>\mathbf{v}</m> into two parts. These parts are a component parallel to the normal vector 
+    (<m>\mathbf{v}_{\parallel}</m>) and a component orthogonal to the normal vector (<m>\mathbf{v}_{\perp}</m>). Thus, <m>\mathbf{v} = \mathbf{v}_{\parallel} + \mathbf{v}_{\perp}</m>.
   </p>
 
   <p>
-    Remember the rules for the geometric product: parallel vectors commute, so <m>\mathbf{n}\mathbf{v}_{\parallel} = \mathbf{v}_{\parallel}\mathbf{n}</m>. Conversely, orthogonal vectors anticommute, meaning <m>\mathbf{n}\mathbf{v}_{\perp} = -\mathbf{v}_{\perp}\mathbf{n}</m>. Using these rules, we can apply the reflection formula to the parallel and orthogonal components.
+    Remember the rules for the geometric product: parallel vectors commute, so <m>\mathbf{n}\mathbf{v}_{\parallel} = \mathbf{v}_{\parallel}\mathbf{n}</m>. Conversely, 
+    orthogonal vectors anticommute, meaning <m>\mathbf{n}\mathbf{v}_{\perp} = -\mathbf{v}_{\perp}\mathbf{n}</m>. Using these rules, we can apply the reflection formula 
+    to the parallel and orthogonal components.
     <md>
       -\mathbf{n}\mathbf{v}_{\parallel}\mathbf{n} = -\mathbf{v}_{\parallel}\mathbf{n}\mathbf{n} = -\mathbf{v}_{\parallel}(\mathbf{n}^2) = -\mathbf{v}_{\parallel}
     </md>
@@ -295,7 +318,8 @@
   </p>
 
   <p>
-    We can then add our seperate components back together, obtaining <m>\mathbf{v}' = -\mathbf{v}_{\parallel} + \mathbf{v}_{\perp}</m>. The component that is parallel to the normal vector is flipped, while the component orthogonal to the normal vector is unchanged. Thus, we have reflected <m>\vvec</m> across the plane, as seen in <xref ref="reflection"/>.
+    We can then add our seperate components back together, obtaining <m>\mathbf{v}' = -\mathbf{v}_{\parallel} + \mathbf{v}_{\perp}</m>. The component that is 
+    parallel to the normal vector is flipped, while the component orthogonal to the normal vector is unchanged. Thus, we have reflected <m>\vvec</m> across the plane, as seen in <xref ref="reflection"/>.
   </p>
 
   <figure xml:id="reflection">
@@ -307,7 +331,9 @@
   </figure>
 
   <p>
-    Although reflections are very useful in Geometric Algebra, they are especially useful when combined with other reflections. A pertinent theorem to this is the Cartan-Dieudonné theorem, which states that any rotation can be constructed by combining reflections. If we reflect a vector twice across two different planes with normal vectors <m>\mathbf{n}_1</m> and <m>\mathbf{n}_2</m>, then the transformed vector <m>\vvec''</m> is in the form:
+    Although reflections are very useful in Geometric Algebra, they are especially useful when combined with other reflections. A pertinent theorem to 
+    this is the Cartan-Dieudonné theorem, which states that any rotation can be constructed by combining reflections. If we reflect a vector twice across 
+    two different planes with normal vectors <m>\mathbf{n}_1</m> and <m>\mathbf{n}_2</m>, then the transformed vector <m>\vvec''</m> is in the form:
     <md>
       \mathbf{v}'' = -\mathbf{n}_2(-\mathbf{n}_1\mathbf{v}\mathbf{n}_1)\mathbf{n}_2 = (\mathbf{n}_2\mathbf{n}_1)\mathbf{v}(\mathbf{n}_1\mathbf{n}_2).
     </md>
@@ -326,25 +352,32 @@
   </p>
 
   <p>
-    We defined our rotor <m>R</m> as the geometric product of two normal vectors: <m>R = \mathbf{n}_2\mathbf{n}_1</m>. Because they are both vectors, we can expand this into inner and outer products:
+    We defined our rotor <m>R</m> as the geometric product of two normal vectors: <m>R = \mathbf{n}_2\mathbf{n}_1</m>. Because they are both vectors, 
+    we can expand this into inner and outer products:
     <md>
       R = \mathbf{n}_2\cdot\mathbf{n}_1 + \mathbf{n}_2\wedge\mathbf{n}_1.
     </md>
   </p>
 
   <p>
-    Because <m>\mathbf{n}_1</m> and <m>\mathbf{n}_2</m> are unit vectors, their inner product <m>\mathbf{n}_2\cdot\mathbf{n}_1</m> is simply <m>\cos(\theta)</m>, where <m>\theta</m> is the angle between them. The outer product <m>\mathbf{n}_2\wedge\mathbf{n}_1</m> forms a bivector representing the plane of rotation. Let us define <m>B</m> as the unit bivector representing this plane. Then <m>\mathbf{n}_2\wedge\mathbf{n}_1 = -B\sin(\theta)</m>. Substituting these into the equation for the rotor equation gives the equation:
+    Because <m>\mathbf{n}_1</m> and <m>\mathbf{n}_2</m> are unit vectors, their inner product <m>\mathbf{n}_2\cdot\mathbf{n}_1</m> is simply <m>\cos(\theta)</m>, 
+    where <m>\theta</m> is the angle between them. The outer product <m>\mathbf{n}_2\wedge\mathbf{n}_1</m> forms a bivector representing the plane of rotation. Let 
+    us define <m>B</m> as the unit bivector representing this plane. Then <m>\mathbf{n}_2\wedge\mathbf{n}_1 = -B\sin(\theta)</m>. Substituting these into the equation for the rotor equation gives the equation:
     <md>
       R = \cos(\theta) - B\sin(\theta).
     </md>
   </p>
 
   <p>
-    Interestingly, this is equation is a generalization of Euler's formula, <m>e^{i\theta} = \cos(\theta) + i\sin(\theta)</m>. Because the unit bivector <m>B</m> squares to <m>-1</m> (similar to the imaginary number <m>i</m>), we can represent the rotor as the exponential: <m>R = e^{-B\theta}</m>. Although <m>B</m> is similar to the imaginary unit <m>i</m>, it is far more powerful, as it can be used to represent a rotation in any plane in any dimension.
+    Interestingly, this is equation is a generalization of Euler's formula, <m>e^{i\theta} = \cos(\theta) + i\sin(\theta)</m>. Because the unit bivector <m>B</m> 
+    squares to <m>-1</m> (similar to the imaginary number <m>i</m>), we can represent the rotor as the exponential: <m>R = e^{-B\theta}</m>. Although <m>B</m> is 
+    similar to the imaginary unit <m>i</m>, it is far more powerful, as it can be used to represent a rotation in any plane in any dimension.
   </p>
 
   <p>
-    When we apply the sandwich product <m>\mathbf{v}'' = R\mathbf{v}R^{\dagger}</m>, the vector is reflected <em>twice</em>. This means the total angle of rotation is <m>2\theta</m>. In order to rotate a vector by angle <m>\alpha</m>, we construct a rotor with an angle of <m>\alpha/2</m>. Thus, the rotor <m>R</m> that rotates any multivector by an angle <m>\alpha</m> in a plane represented by <m>B</m> is:
+    When we apply the sandwich product <m>\mathbf{v}'' = R\mathbf{v}R^{\dagger}</m>, the vector is reflected <em>twice</em>. This means the total angle of rotation 
+    is <m>2\theta</m>. In order to rotate a vector by angle <m>\alpha</m>, we construct a rotor with an angle of <m>\alpha/2</m>. Thus, the rotor <m>R</m> that 
+    rotates any multivector by an angle <m>\alpha</m> in a plane represented by <m>B</m> is:
     <md>
       R = e^{-B\alpha/2}.
     </md>
@@ -359,37 +392,61 @@
   </p>
 
   <p>
-    This formula rotates any vector in not only 3 dimensional space, but a space of any dimension. Rotors are just as versatile as quaternions when it comes to rotations, but have a cleaner construction and can work in any basis.
+    This formula rotates any vector in not only 3 dimensional space, but a space of any dimension. Rotors are just as versatile as quaternions when it 
+    comes to rotations, but have a cleaner construction and can work in any basis.
   </p>
 </section>
 
   <section>
     <title>Further Explorations in Geometric Algebra</title>
     <p>
-      Unfortunately, we were only able to focus on Clifford Algebras over standard Euclidean space <m>\clthree</m> and a few applications. There are far more interesting Geometric Algebras than this, and their applications go far beyond rotations. In fact, Geometric Algebra is a quickly growing field in both math and physics. Some useful topics that I would recommend exploring are:
+      Unfortunately, we were only able to focus on Clifford Algebras over standard Euclidean space <m>\clthree</m> and a few applications. There are far 
+      more interesting Geometric Algebras than this, and their applications go far beyond rotations. In fact, Geometric Algebra is a quickly growing field 
+      in both math and physics. Some useful topics that I would recommend exploring are:
     </p>
 
     <subsection>
       <title>Spacetime Algebra (STA)</title>
       <p>
-        We can add an additional basis vector that squares to <m>-1</m> to form <m>Cl_{3,1,0}</m>. This Geometric Algebra is a very useful representation of relativistic physics. This is known as Spacetime Algebra, which is able to combine the electric and magnetic fields into a single bivector field, denoted <m>F</m>. Using this, Maxwell's 4 equations can be condensed into the single equation <m>\nabla F = J</m>.
+        We can add an additional basis vector that squares to <m>-1</m> to form <m>Cl_{3,1,0}</m>. This Geometric Algebra is a very useful representation 
+        of relativistic physics. This is known as Spacetime Algebra, which is able to combine the electric and magnetic fields into a single bivector field, 
+        denoted <m>F</m>. Using this, Maxwell's 4 equations can be condensed into the single equation <m>\nabla F = J</m>.
       </p>
     </subsection>
 
     <subsection>
       <title>Projective Geometric Algebra (PGA)</title>
       <p>
-        From <m>\clthree</m>, we can add a basis vector that squares to zero <m>Cl_{3,0,1}</m>. This is 3D Projective Geometric Algebra. PGA treats translations and rotations very similarly, which is useful for computer graphics and kinematics. PGA introduces motors (motion rotors) that can perform rigid body transformations with a single geometric product.
+        From <m>\clthree</m>, we can add a basis vector that squares to zero <m>Cl_{3,0,1}</m>. This is 3D Projective Geometric Algebra. 
+        PGA treats translations and rotations very similarly, which is useful for computer graphics and kinematics. PGA introduces motors (
+          motion rotors) that can perform rigid body transformations with a single geometric product.
       </p>
     </subsection>
 
     <subsection>
       <title>Geometric Calculus</title>
       <p>
-        Geometric Calculus extends Geometric Algebra to derivatives and integrals. It introduces the vector derivative, <m>\nabla</m>, which can work with multivectors. This combines the gradient, divergence, and curl into a single operator. Geometric Calculus also generalizes Stokes' Theorem, which also combines Green's theorem and the fundamental theorem of calculus.
+        Geometric Calculus extends Geometric Algebra to derivatives and integrals. It introduces the vector derivative, <m>\nabla</m>, which can 
+        work with multivectors. This combines the gradient, divergence, and curl into a single operator. Geometric Calculus also generalizes Stokes' 
+        Theorem, which also combines Green's theorem and the fundamental theorem of calculus.
       </p>
     </subsection>
   </section>
+
+<section>
+  <title>Manim Presentation</title>
+  <figure xml:id="manim-demo">
+    <caption>Interactive Slideshow of Geometric Algebra Concepts</caption>
+    
+    <interactive iframe="https://dykhuismicah.github.io/Geometric-Algebra-Presentation/" width="80%" aspect="16:9">
+      
+      <image source="rotor_static.png">
+        <description>A static view of a vector being rotated by a rotor.</description>
+      </image>
+      
+    </interactive>
+  </figure>
+</section>
 
   <references>
     <title>Bibliography</title>
