@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<article xml:id="ga-paper">
+<article xml:id="ga-paper" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Geometric Algebra</title>
 <section>
   <bibinfo>
@@ -145,11 +145,21 @@
       <sidebyside widths="45% 45%">
         <figure xml:id="R2-Vectors">
           <caption>Vectors in <m>\mathbb{R}^2</m></caption>
-          <image source="CL2Vectors.png"/>
+          <image>
+            <prefigure xmlns="https://prefigure.org"
+                       label="CL2Vectors">
+              <xi:include href="prefigure/two-vectors.xml"/>
+            </prefigure>
+          </image>
         </figure>
         <figure xml:id="R2Bi-Vector">
           <caption>Oriented Area / bi-vector</caption>
-          <image source="CL2OrientedArea.png"/>
+          <image>
+            <prefigure xmlns="https://prefigure.org"
+                       label="CL2OrientedArea">
+              <xi:include href="prefigure/parallelogram.xml"/>
+            </prefigure>
+          </image>
         </figure>
       </sidebyside>
     </figure>
