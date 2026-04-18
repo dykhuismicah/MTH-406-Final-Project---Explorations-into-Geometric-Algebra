@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="CL2Vectors-figure" width="260" height="260" viewBox="0 0 260 260">
+  <defs>
+    <clipPath id="CL2Vectors-clipPath-0">
+      <rect x="5.0" y="5.0" width="250.0" height="250.0"/>
+    </clipPath>
+    <clipPath id="CL2Vectors-clipPath-1">
+      <rect x="5.0" y="5.0" width="250.0" height="250.0"/>
+    </clipPath>
+    <marker id="CL2Vectors-arrow-head-end-4_None_24_60-red" markerWidth="18.0" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="13.1" refY="8.0">
+      <path d="M 18.0 8.0L 0.0 16.0L 3.5 10.0L 3.5 6.0L 0.0 0.0Z" fill="red" stroke="none"/>
+    </marker>
+    <marker id="CL2Vectors-arrow-head-end-4_None_24_60-red-outline" markerWidth="22.0" markerHeight="20.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="15.1" refY="10.0">
+      <path d="M 20.8 11.8 L 2.8 19.8 A 2 2 0 0 1 0.0 18.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 20.8 8.2 A 2 2 0 0 1 20.8 11.8 Z" fill="white" stroke="none"/>
+    </marker>
+    <marker id="CL2Vectors-arrow-head-end-4_None_24_60-blue" markerWidth="18.0" markerHeight="16.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="13.1" refY="8.0">
+      <path d="M 18.0 8.0L 0.0 16.0L 3.5 10.0L 3.5 6.0L 0.0 0.0Z" fill="blue" stroke="none"/>
+    </marker>
+    <marker id="CL2Vectors-arrow-head-end-4_None_24_60-blue-outline" markerWidth="22.0" markerHeight="20.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse" refX="15.1" refY="10.0">
+      <path d="M 20.8 11.8 L 2.8 19.8 A 2 2 0 0 1 0.0 18.0 L 0.0 2.0 A 2 2 0 0 1 2.8 0.2 L 20.8 8.2 A 2 2 0 0 1 20.8 11.8 Z" fill="white" stroke="none"/>
+    </marker>
+  </defs>
+  <path id="CL2Vectors-v1" stroke="red" stroke-width="4" fill="none" d="M 24.2 235.8 L 178.1 197.3" marker-end="url(#CL2Vectors-arrow-head-end-4_None_24_60-red)"/>
+  <path id="CL2Vectors-v2" stroke="blue" stroke-width="4" fill="none" d="M 24.2 235.8 L 101.2 81.9" marker-end="url(#CL2Vectors-arrow-head-end-4_None_24_60-blue)"/>
+</svg>
