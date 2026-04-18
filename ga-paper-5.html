@@ -149,7 +149,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ga-paper-2.html#ga-paper-2-6" class="internal"><span class="codenumber">1.1</span> <span class="title">Why Geometric Algebra?</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ga-paper-2.html#ga-paper-2-6-3" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Built from any arbitrary Vector Space</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ga-paper-2.html#ga-paper-2-6-4" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Algebra Between Elements of Different Dimensions</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ga-paper-2.html#ga-paper-2-6-4" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Algebra Between Elements of Different Grades</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ga-paper-2.html#ga-paper-2-6-5" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Geometric Intuition</span></a></div></li>
 </ul>
 </li></ul>
@@ -177,7 +177,7 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="ga-paper-5"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Rotors and Rotations</span>
 </h2>
-<div class="para" id="ga-paper-5-2">Rotors are the easiest and most powerful way to represent rotations in Geometric Algebra.<div class="autopermalink" data-description="Paragraph"><a href="#ga-paper-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ga-paper-5-2">Rotors are the easiest and most powerful way to represent rotations in geometric algebra.<div class="autopermalink" data-description="Paragraph"><a href="#ga-paper-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ga-paper-5-3">
 <div class="para">We defined our rotor <span class="process-math">\(R\)</span> as the geometric product of two normal vectors: <span class="process-math">\(R = \mathbf{n}_2\mathbf{n}_1\text{.}\)</span> Because they are both vectors, we can expand this into inner and outer products:</div>
@@ -197,7 +197,7 @@ R = \cos(\theta) - B\sin(\theta).
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ga-paper-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="ga-paper-5-5">Interestingly, this is equation is a generalization of Euler’s formula, <span class="process-math">\(e^{i\theta} = \cos(\theta) + i\sin(\theta)\text{.}\)</span> Because the unit bivector <span class="process-math">\(B\)</span> squares to <span class="process-math">\(-1\)</span> (similar to the imaginary number <span class="process-math">\(i\)</span>), we can represent the rotor as the exponential: <span class="process-math">\(R = e^{-B\theta}\text{.}\)</span> Although <span class="process-math">\(B\)</span> is similar to the imaginary unit <span class="process-math">\(i\text{,}\)</span> it is far more powerful, as it can be used to represent a rotation in any plane in any dimension.<div class="autopermalink" data-description="Paragraph"><a href="#ga-paper-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ga-paper-5-5">Interestingly, this equation is a generalization of Euler’s formula, <span class="process-math">\(e^{\mathrm{i}\theta} = \cos(\theta) + \mathrm{i}\sin(\theta)\text{.}\)</span> Because the unit bivector <span class="process-math">\(B\)</span> squares to <span class="process-math">\(-1\)</span> (similar to the imaginary number <span class="process-math">\(\mathrm{i}\)</span>), we can represent the rotor as the exponential: <span class="process-math">\(R = e^{-B\theta}\text{.}\)</span> Although <span class="process-math">\(B\)</span> is similar to the imaginary unit <span class="process-math">\(\mathrm{i}\text{,}\)</span> it is far more powerful, as it can be used to represent a rotation in any plane in any dimension.<div class="autopermalink" data-description="Paragraph"><a href="#ga-paper-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ga-paper-5-6">
 <div class="para">When we apply the sandwich product <span class="process-math">\(\mathbf{v}'' = R\mathbf{v}R^{\dagger}\text{,}\)</span> the vector is reflected <em class="emphasis">twice</em>. This means the total angle of rotation is <span class="process-math">\(2\theta\text{.}\)</span> In order to rotate a vector by angle <span class="process-math">\(\alpha\text{,}\)</span> we construct a rotor with an angle of <span class="process-math">\(\alpha/2\text{.}\)</span> Thus, the rotor <span class="process-math">\(R\)</span> that rotates any multivector by an angle <span class="process-math">\(\alpha\)</span> in a plane represented by <span class="process-math">\(B\)</span> is:</div>
@@ -211,7 +211,7 @@ R = e^{-B\alpha/2}.
 <div class="autopermalink" data-description="Paragraph"><a href="#ga-paper-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="ga-paper-5-7">
-<div class="para">To rotate any vector <span class="process-math">\(\mathbf{v}\text{,}\)</span> we use the sandwhich product:</div>
+<div class="para">To rotate any vector <span class="process-math">\(\mathbf{v}\text{,}\)</span> we use the sandwich product:</div>
 <div class="displaymath process-math" id="ga-paper-5-7-2">
 \begin{equation*}
 \vvec' = e^{-B\alpha/2} \mathbf{v} e^{B\alpha/2}.
