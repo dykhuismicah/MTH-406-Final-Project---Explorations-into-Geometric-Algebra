@@ -1,12 +1,30 @@
 <diagram>
   <annotations>
+    <annotation id="CL2Vectors-figure" speech2="Two vectors v one and v two in the plane R two.  These vectors will be used in the accompanying diagram">
+      <grouped>CL2Vectors-figure</grouped>
+      <position>1</position>
+      <children>
+        <active>CL2Vectors-v1</active>
+        <active>CL2Vectors-v2</active>
+      </children>
+      <components>
+        <active>CL2Vectors-v1</active>
+        <active>CL2Vectors-v2</active>
+      </components>
+    </annotation>
     <annotation id="CL2Vectors-v1" speech2="The first vector v one">
       <active>CL2Vectors-v1</active>
       <position>1</position>
+      <parents>
+        <grouped>CL2Vectors-figure</grouped>
+      </parents>
     </annotation>
     <annotation id="CL2Vectors-v2" speech2="The other vector v two">
       <active>CL2Vectors-v2</active>
       <position>2</position>
+      <parents>
+        <grouped>CL2Vectors-figure</grouped>
+      </parents>
     </annotation>
   </annotations>
 </diagram>
