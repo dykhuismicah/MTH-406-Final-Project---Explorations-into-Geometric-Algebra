@@ -1,0 +1,16 @@
+<diagram dimensions="(250, 250)" margins="5"
+         xmlns="https://prefigure.org">
+  <definition>v1=(4,1)</definition>
+  <definition>v2=(2,4)</definition>
+  <coordinates bbox="(-0.5,-0.5,6,6)">
+    <vector at="v1" v="v1" stroke="red"/>
+    <vector at="v2" v="v2" stroke="blue"/>
+  </coordinates>
+
+  <annotations text="Two vectors v one and v two in the plane R two.  These vectors will be used in the accompanying diagram">
+    <annotation ref="v1"
+                text="The first vector v one"/>
+    <annotation ref="v2"
+                text="The other vector v two"/>
+  </annotations>
+</diagram>
